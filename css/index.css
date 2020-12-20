@@ -92,6 +92,7 @@ header {
     height: 180px;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
     z-index:2;
+    border-radius: 5px;
 }
 
 #hidden-menu>ul {
@@ -109,7 +110,6 @@ header {
 #hidden-menu>ul>li>a:hover {
     text-decoration: underline;
 }
-
 #hidden-menu.hidden {
     right: -100%;
 }
@@ -272,7 +272,7 @@ main {
     width: 99%;
     border-bottom:2px solid rgb(165, 165, 165);
     display:flex;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 .diary>div {
     font-size: 11pt;
