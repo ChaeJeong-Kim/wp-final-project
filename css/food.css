@@ -1,12 +1,7 @@
-.category>ul>li:nth-child(1) {
+.category>ul>li:nth-child(2) {
     font-weight: bold;
     color:rgb(72, 87, 69);
     text-decoration: underline;
-}
-
-.category>ul>li>a {
-    text-decoration: none;
-    color: rgb(95, 95, 95);
 }
 .photo-frame>div>p:nth-child(1):hover {
     text-decoration: underline;
@@ -26,7 +21,6 @@
     opacity: 0.5;
 }
 
-
 .main-photo{
     display: none;
     margin-bottom: 10px;
@@ -34,11 +28,13 @@
 .show {
     display:grid;
 }
+
 .pagination {
     width: 99%;
     justify-content: center;
     margin: 0 46%; margin-bottom: 60px;
 }
+
 .pagination>a {
     text-decoration: none;
     color: rgb(73, 70, 70);
