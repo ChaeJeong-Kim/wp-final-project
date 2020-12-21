@@ -29,8 +29,24 @@
     font-size:9pt;
     color:rgb(128, 128, 128);
 }
-
-.photo-frame >  img {
+.main-photo {
+    padding-top: 15px;
+    grid-template-columns: repeat(3, 260px);
+    grid-auto-rows: 190px;
+}   
+.photo-frame {
+    border-bottom: 2px solid rgb(233, 227, 227);
+    margin-top: 10px;
+}
+.photo-frame > img {
     max-height: 70%;
     max-width: 30%;
+}
+.photo-frame > img:hover {
+    transform:scale(1.05);
+}
+.photo-frame > div {
+    margin-top: 20px;
+    margin-bottom: 2px;
+    text-align: center;
 }

@@ -218,12 +218,23 @@ main {
     border-left: 2px solid rgb(231, 231, 231);
     padding-left: 1%;
 }
-.line1-coffee>h5, .line1-food>h5, .line3-diary>h5, .line3-review>h5 {
+.content h5 {
     font-size: 13pt;
     color:rgb(131, 146, 129);
     background-color: rgb(231, 231, 231);
     line-height: 35px;
     padding-left: 5px;
+}
+.content h5 > a {
+    float: right;
+    font-size: 10pt;
+    padding-right: 10px;
+    padding-top: 2px;
+    color: rgb(90, 99, 86);
+    text-decoration: none;
+}
+.content h5 > a:hover {
+    text-decoration: underline;
 }
 .coffee, .food, .daily, .diary, .review {
     display:flex;
