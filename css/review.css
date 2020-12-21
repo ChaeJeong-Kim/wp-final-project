@@ -1,0 +1,11 @@
+.category>ul>li:nth-child(5) {
+    font-weight: bold;
+    color:rgb(72, 87, 69);
+    text-decoration: underline;
+}
+.main-photo{
+    margin-bottom: 300px;
+}
+.photo-frame> img {
+    max-width: 95%;
+}

@@ -1,0 +1,36 @@
+.category>ul>li:nth-child(4) {
+    font-weight: bold;
+    color:rgb(72, 87, 69);
+    text-decoration: underline;
+}
+
+.main-photo{
+    margin-bottom: 300px;
+}
+
+.photo-frame >  img {
+    max-height: 65%;
+    max-width: 100%;
+}
+.photo-frame>div>p:nth-child(1):hover {
+    text-decoration: underline;
+}
+.text-frame > p:not(:nth-child(2)){
+    margin-bottom: 5px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.text-frame > p:nth-child(2)>img {
+    height: 15px;
+    margin: 0 2px -3px 6px;
+    opacity: 0.5;
+}
+.text-frame > p:nth-child(2){
+    font-size:9pt;
+    color:rgb(128, 128, 128);
+}
+
+.photo-frame >  img {
+    max-height: 70%;
+    max-width: 30%;
+}
