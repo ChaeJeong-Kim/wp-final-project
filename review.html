@@ -52,7 +52,7 @@
                     <div>(cowjd)</div>
                     <div>
                         <p>프로필▶</p>
-                        <p>이웃추가▶</p>
+                        <p><button onclick="popup();">친구추가▶</button></p>
                     </div>
                 </div>
 
@@ -86,6 +86,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="add-neighbor-container">
+                    <div class="add-neighbor">
+                        <h4>친구추가</h4>
+                        <div>Chae J님을 </div>
+                        <div><a>친구목록에 추가</a>하시겠습니까?</div>
+                        <div class="popup-buttons">
+                            <button>추가</button>
+                            <button id="cancel" onclick="closePopup()">취소</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="content">
@@ -110,5 +121,6 @@
 
     <script src="/js/menu-button.js"></script>
     <script src="/js/clock.js"></script>
+    <script src="/js/popup.js"></script>
 </body>
 </html>

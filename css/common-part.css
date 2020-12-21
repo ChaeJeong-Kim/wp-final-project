@@ -141,6 +141,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: rgb(228, 231, 227);
+    padding: 10px 0;
 }
 .side-profile>div:nth-child(2) { font-size: 12pt; }
 .side-profile>div:nth-child(3) { font-size: 10pt; }
@@ -148,15 +149,16 @@ main {
     font-size: 9pt;
     color:rgb(114, 114, 114);
     cursor: pointer;
+    line-height: 30px;
 }
 .side-profile>div:nth-child(4)>p {
     float: left;
     margin: 0 6px;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .clock {
-    margin: 15px 16%;
+    margin: 15px 17%;
 }
 
 .log {
@@ -269,5 +271,63 @@ footer{
     color:rgb(243, 243, 239);
 }
 
-/* ------------------------------- */
-/* 위에까지는 카테고리들의 공통부분 */
+
+/* 버튼 */
+.side-profile button {
+    width:70px;
+    height:25px;
+    border:1px solid rgb(193, 199, 192);
+    font-size: 9pt;
+    color:rgb(114, 114, 114);
+    cursor: pointer;
+}
+
+/* 이웃추가 팝업창 */
+.add-neighbor-container {
+    position:fixed;
+    top:0;left:0;
+    width: 100%;height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    display: none;
+    align-items: center;justify-content: center;
+    z-index: 10;
+}
+.add-neighbor {
+    width: 320px;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+    padding: 30px 10px;
+}
+.add-neighbor h4 {
+    text-align:center;
+    border-bottom: 3px solid rgb(89, 107, 85);
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.add-neighbor div {
+    font-size: 11pt;
+    text-align:center;
+    color: rgb(100, 98, 98);
+}
+.add-neighbor div a{
+    font-weight: bold;
+}
+.popup-buttons {
+    margin-top:30px; margin-bottom:10px;
+}
+.popup-buttons button {
+    background-color: transparent;
+    height: 24px;
+    width: 80px;
+    cursor: pointer;
+    color: black;
+    font-size:11pt;
+    border:1px solid rgb(193, 199, 192);
+}
+.popup-buttons button:nth-child(1) {
+    background-color: rgb(218, 223, 215);
+}
+
