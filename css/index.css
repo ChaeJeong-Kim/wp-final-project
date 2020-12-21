@@ -278,11 +278,12 @@ main {
     padding-left: 5px;
 }
 .daily:nth-child(1) {
-    width: 49%;
+    width: 45%;
 }
 .daily:nth-child(2) {
     width: 49%;
-    float: right;
+    float: left;
+    margin-right: 18px;
 }
 .daily>div>p:nth-child(1):hover, .daily > div>p:nth-child(2):hover {
     text-decoration: underline;
