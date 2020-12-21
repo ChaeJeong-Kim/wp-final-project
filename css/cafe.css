@@ -92,8 +92,6 @@ header {
     color: rgb(221, 221, 221);
 }
 
-
-
 #hidden-menu {
     position: fixed;
     top: 45px;
@@ -201,119 +199,68 @@ main {
     width: 75%;
     margin-left: 6%;
 }
-.content-line1 {
-    width: 99%;
-    border-top:2px solid rgb(165, 165, 165);
-    border-bottom:2px solid rgb(165, 165, 165);
-    display:flex;
-}
-.line1-coffee, .line1-food, .line3-diary, .line3-review {
-    width: 49%;
-    padding-bottom:8px;
-}
-.line1-coffee, .line3-diary {
-    padding-right: 1%;
-}
-.line1-food, .line3-review {
-    border-left: 2px solid rgb(231, 231, 231);
-    padding-left: 1%;
-}
-.line1-coffee>h5, .line1-food>h5, .line3-diary>h5, .line3-review>h5 {
+.content>h5{
     font-size: 13pt;
-    color:rgb(131, 146, 129);
-    background-color: rgb(231, 231, 231);
-    line-height: 35px;
-    padding-left: 5px;
+    color:rgb(91, 102, 89);
+    line-height: 50px;
+    height: 45px;
+    float: left;
 }
-.coffee, .food, .daily, .diary, .review {
-    display:flex;
-    flex-direction: row;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.coffee>div, .food>div, .daily>div, .review>div  {
-    margin-left: 10px;
-    font-size: 11pt;
-}
-.coffee>div>p:nth-child(1):hover, .coffee > div>p:nth-child(2):hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-.food>div>p:nth-child(1):hover, .food > div>p:nth-child(2):hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-.coffee>div>p:nth-child(1), .food>div>p:nth-child(1), .daily>div>p:nth-child(1)  {
-    font-size: 13pt;
-    font-weight: bold;
-    color:rgb(131, 146, 129);
-}
-.coffee>div>p:nth-child(3), .food>div>p:nth-child(3), .daily>div>p:nth-child(3) {
-    margin-top: 10px;
-    color: gray;
-}
-
-
-.content-line2 {
-    width: 99%;
-    border-bottom:2px solid rgb(165, 165, 165);
-    padding-bottom:8px;
-}
-.content-line2>h5 {
-    font-size: 13pt;
-    color:rgb(131, 146, 129);
-    background-color: rgb(231, 231, 231);
-    line-height: 35px;
-    padding-left: 5px;
-}
-.daily:nth-child(1) {
-    width: 49%;
-}
-.daily:nth-child(2) {
-    width: 49%;
+.content>h5>p {
     float: right;
-}
-.daily>div>p:nth-child(1):hover, .daily > div>p:nth-child(2):hover {
-    text-decoration: underline;
-    cursor: pointer;
+    font-size: 10pt;
+    font-weight: lighter;
 }
 
-
-.content-line3 {
-    width: 99%;
-    border-bottom:2px solid rgb(165, 165, 165);
-    display:flex;
+.main-photo {
+    width:99%;
+    border-top:2px solid rgb(212, 212, 212); border-bottom:2px solid rgb(212, 212, 212);
+    margin: 3px auto;
     margin-bottom: 60px;
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    grid-auto-rows: 240px;
+    grid-auto-flow: row dense;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    background-color: whitesmoke;
 }
-.diary>div {
-    font-size: 11pt;
+.photo-frame {
+    overflow: hidden;
+    text-align: center;
     cursor: pointer;
-    margin-bottom: 10px;
 }
-.diary>div>p:nth-child(1):hover, .review > div>p:nth-child(1):hover, .review > div>p:nth-child(2):hover {
+.photo-frame>div>p:nth-child(1):hover {
     text-decoration: underline;
-    cursor: pointer;
 }
-.diary>div>p:nth-child(1), .review>div>p:nth-child(1) {
-    font-size: 13pt;
+.photo-frame >  img {
+    max-height: 70%;
+    max-width: 100%;
+}
+.text-frame{
+    text-align: left;
+    padding: 5px 5px;
+}
+.text-frame > p:not(:nth-child(2)){
+    margin-bottom: 5px;
+    font-size: 10pt;
     font-weight: bold;
-    color:rgb(131, 146, 129);
 }
-.diary>div>p:nth-child(3) {
-    margin-top: 5px;
-    color: gray;
-} 
-.review>div>p:nth-child(3) {
-    margin-top: 10px;
-    color: gray;
+.text-frame > p:nth-child(2){
+    font-size:9pt;
+    color:rgb(128, 128, 128);
+}
+.text-frame > p:nth-child(2)>img {
+    height: 15px;
+    margin: 0 2px -3px 6px;
+    opacity: 0.5;
 }
 
 
 .content img { opacity: 0.9; }
-.content img:hover {
-    opacity: 1;
-    transform: scale(1.05);
-}
+.content img:hover { opacity: 1; }
 /* 메인태그 끝 */
 
 
@@ -323,4 +270,14 @@ footer{
     background-color:  rgb(111, 122, 106);
     text-align:center;
     color:rgb(243, 243, 239);
+}
+
+/* ------------------------------- */
+/* 위에까지는 카테고리들의 공통부분 */
+
+
+.category>ul>li:nth-child(1) {
+    font-weight: bold;
+    color:rgb(72, 87, 69);
+    text-decoration: underline;
 }
