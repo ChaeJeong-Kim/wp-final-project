@@ -29,4 +29,4 @@ app.use((err, req, res, next) => {
     res.render('error');
 });
 
-app.listen(3000, () => console.log('Server running on 3000!'));
+app.listen(PORT, () => console.log('Server running on 3000!'));
