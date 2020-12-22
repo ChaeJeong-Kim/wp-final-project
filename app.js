@@ -28,4 +28,4 @@ app.use((err, req, res, next) => {
     res.render('error');
 });
 
-app.listen(PORT, () => console.log('Server running'));
+app.listen(PORT, () => console.log('Server is running'));
