@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+<link rel='stylesheet' href="/public/css/common-part.css">
+<link rel='stylesheet' href="/public/css/daily.css">
+{% endblock %}
+
+
+{% block maincontent %}
+<div class="content">
+    <h5>일상<p>_게시글 3개</p>
+    </h5>
+    <div class="main-photo show" id="page-1-content">
+        <div class="photo-frame">
+            <img src="/public/images/content/daily1.jpg">
+            <div class="text-frame">
+                <p>주말에 등산간 날, 아름다운 풍경...</p>
+                <p>2020.05.28<img src="/public/images/content/comment2.png" width="13px">2</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <img src="/public/images/content/daily2.jpg">
+            <div class="text-frame two">
+                <p>오랜만에 놀이공원 가서 실컷...</p>
+                <p>2020.06.15<img src="/public/images/content/comment2.png" width="13px">1</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <img src="/public/images/content/daily1.jpg">
+            <div class="text-frame">
+                <p>주말에 등산간 날, 아름다운 풍경...</p>
+                <p>2020.05.28<img src="/public/images/content/comment2.png" width="13px">2</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="/public/js/menu-button.js"></script>
+<script src="/public/js/clock.js"></script>
+<script src="/public/js/popup.js"></script>
+{% endblock %}

@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 function popup() {
     document.querySelector('.add-neighbor-container').style.display = "flex";
 }

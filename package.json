@@ -1,0 +1,32 @@
+{
+  "name": "wp-final-project",
+  "version": "1.0.0",
+  "description": "------------",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaeJeong-Kim/wp-final-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChaeJeong-Kim/wp-final-project/issues"
+  },
+  "homepage": "https://github.com/ChaeJeong-Kim/wp-final-project#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "engines": {
+    "node": "^14.15.1",
+    "npm": "^6.14.8"
+  }
+}

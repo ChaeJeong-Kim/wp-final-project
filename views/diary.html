@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+<link rel='stylesheet' href="/public/css/common-part.css">
+<link rel='stylesheet' href="/public/css/diary.css">
+{% endblock %}
+
+
+{% block maincontent %}
+<div class="content">
+    <h5>일기<p>_게시글 7개</p>
+    </h5>
+    <div class="main-photo show" id="page-1-content">
+        <div class="photo-frame">
+            <img src="/public/images/content/sun.png">
+            <div class="text-frame">
+                <p>화창한 날씨, 덥지만 맑은...</p>
+                <p>2020.06.29<img src="/public/images/content/comment2.png" width="13px">0</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <img src="/public/images/content/rain.png">
+            <div class="text-frame two">
+                <p>비 내린 날, 오랜만에 비가...</p>
+                <p>2020.07.12<img src="/public/images/content/comment2.png" width="13px">1</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <img src="/public/images/content/snow.png">
+            <div class="text-frame">
+                <p>눈 내린 날, 오늘은 집에서...</p>
+                <p>2020.12.17<img src="/public/images/content/comment2.png" width="13px">2</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <img src="/public/images/content/cloudy.png">
+            <div class="text-frame">
+                <p>흐린 날, 날씨가 흐려서...</p>
+                <p>2020.12.18<img src="/public/images/content/comment2.png" width="13px">2</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <img src="/public/images/content/cloudy.png">
+            <div class="text-frame">
+                <p>흐린 날, 날씨가 흐려서...</p>
+                <p>2020.12.19<img src="/public/images/content/comment2.png" width="13px">2</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <img src="/public/images/content/sun.png">
+            <div class="text-frame">
+                <p>화창한 날씨, 오랜만에 날씨가...</p>
+                <p>2020.12.20<img src="/public/images/content/comment2.png" width="13px">0</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <img src="/public/images/content/snow.png">
+            <div class="text-frame">
+                <p>눈 내린 날, 또 내리는 눈...</p>
+                <p>2020.12.21<img src="/public/images/content/comment2.png" width="13px">2</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block js %}
+<script src="/public/js/menu-button.js"></script>
+<script src="/public/js/clock.js"></script>
+<script src="/public/js/popup.js"></script>
+{% endblock %}

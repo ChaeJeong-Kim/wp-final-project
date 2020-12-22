@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+<link rel='stylesheet' href="/public/css/common-part.css">
+<link rel='stylesheet' href="/public/css/review.css">
+{% endblock %}
+
+
+{% block maincontent %}
+
+<div class="content">
+    <h5>리뷰★<p>_게시글 1개</p>
+    </h5>
+    <div class="main-photo show" id="page-1-content">
+        <div class="photo-frame">
+            <img src="/public/images/content/review1.jpg">
+            <div class="text-frame">
+                <p>[공기청정기]미세먼지가 많아서 구매한...</p>
+                <p>2020.12.08 <img src="/public/images/content/comment2.png" width="13px">3</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block js %}
+<script src="/public/js/menu-button.js"></script>
+<script src="/public/js/clock.js"></script>
+<script src="/public/js/popup.js"></script>
+{% endblock %}
