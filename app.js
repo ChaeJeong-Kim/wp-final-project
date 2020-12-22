@@ -4,7 +4,6 @@ const nunjucks = require('nunjucks');
 const createError = require('http-errors');
 const pageRouter = require('./routes/page.router');
 
-
 const app = express();
 const PORT = process.env.PORT
 
@@ -29,4 +28,4 @@ app.use((err, req, res, next) => {
     res.render('error');
 });
 
-app.listen(PORT, () => console.log('Server running on 3000!'));
+app.listen(PORT, () => console.log('Server running'));
