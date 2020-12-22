@@ -4,7 +4,7 @@ const router = Router();
 
 router.get('/', (req,res) => {
     res.render('index.html', {
-        title: 'Final Project',
+        title: 'ChaeJ-Blog',
         username: '김채정'
     });
 })
